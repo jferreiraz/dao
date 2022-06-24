@@ -45,12 +45,14 @@ $aluno->insert();
 echo $aluno;
 */
 
-/*
+
 //Inserção de dados na tabela usando stored procedure com a função __construct
-$aluno = new Usuario("Rodrigo","431315555");   // Após a criação da função __construct na classe Usuario
+
+$aluno = new Usuario("Carla","43132255");   // Após a criação da função __construct na classe Usuario
 $aluno->insert();
+
 echo $aluno;
-*/
+
 
 /*
 //Alteração de dados da tabela
@@ -59,13 +61,13 @@ $usuario->LoadById(15);
 $usuario->update("Ana Luisa","133232662");
 echo $usuario;
 */
-//Deleta dados da tabela
 
+/* //Deleta dados da tabela
 $usuario = new Usuario();
 $usuario->LoadById(19);
 $usuario->delete();
-
 echo $usuario;
+*/
 
 
 
