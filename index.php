@@ -52,11 +52,20 @@ $aluno->insert();
 echo $aluno;
 */
 
+/*
 //Alteração de dados da tabela
 $usuario = new Usuario();
 $usuario->LoadById(15);
 $usuario->update("Ana Luisa","133232662");
+echo $usuario;
+*/
+
+$usuario = new Usuario();
+$usuario->LoadById(13);
+$usuario->delete();
 
 echo $usuario;
+
+
 
 ?>
