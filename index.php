@@ -59,6 +59,7 @@ $usuario->LoadById(15);
 $usuario->update("Ana Luisa","133232662");
 echo $usuario;
 */
+//Deleta dados da tabela
 
 $usuario = new Usuario();
 $usuario->LoadById(13);
