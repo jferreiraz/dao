@@ -13,10 +13,10 @@ echo "====================================<br>==================================
 
 */
 
-$root = new Usuario();
+$root = new Usuario(); // Cria novo objeto da classe Usuario
 
-$root->loadById(2);
+$root->loadById(2); // Com o objeto carrega a função de Usuario (id de número 2)
 
-echo $root;
+echo $root;  // Imprime na tela (a função loadById junto a toostring imprime em json)
 
 ?>
