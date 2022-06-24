@@ -34,7 +34,8 @@ class Usuario {
 
     public function loadById($id){
         $sql = new sql();
-        $results = $sql->select("SELECT * FROM tb_usuarios WHERE idusuario = :ID", array(":ID"=>$id));
+        $results = $sql->select("SELECT * FROM tb_usuarios WHERE idusuario = :ID", 
+            array(":ID"=>$id));
         if (count($results) > 0) {
             //$row = $results[0];
             //$this->setIdusuario($row['idusuario']);
@@ -53,7 +54,8 @@ class Usuario {
 
     public static function search($login){
         $sql = new Sql();
-        return $sql->select("SELECT * FROM tb_usuarios WHERE deslogin LIKE :SEARCH ;", array(':SEARCH'=>"%".$login."%"));
+        return $sql->select("SELECT * FROM tb_usuarios WHERE deslogin LIKE :SEARCH ;", 
+            array(':SEARCH'=>"%".$login."%"));
     }
 
     public function login($login,$password){
@@ -105,7 +107,7 @@ class Usuario {
         $this->setDessenha("");
         $this->setDtcadastro(new DateTime());
     }
-
+    
     public function __construct($login = "",$password = ""){ // = "" não é necessário, é uma função que deixa os campos como 'NOT NULL'
         $this->setDeslogin($login);
         $this->setDessenha($password);
