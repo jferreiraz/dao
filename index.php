@@ -62,7 +62,7 @@ echo $usuario;
 //Deleta dados da tabela
 
 $usuario = new Usuario();
-$usuario->LoadById(13);
+$usuario->LoadById(19);
 $usuario->delete();
 
 echo $usuario;
