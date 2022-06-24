@@ -61,7 +61,6 @@ echo $usuario;
 */
 
 $usuario = new Usuario();
-$usuario->LoadById(18);
 $usuario->delete();
 
 echo $usuario;
